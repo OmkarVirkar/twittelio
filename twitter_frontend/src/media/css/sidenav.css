@@ -1,0 +1,52 @@
+.page_side_nav {
+    margin-top: 3.3rem;
+}
+
+.side_nav_icon {
+    font-size: 1.4rem;
+    color: black !important;
+}
+
+.sidenav---sidenav---_2tBP {
+    background: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* .sidenav---navitem---9uL5T {
+    background: cadetblue;
+} */
+
+.selected_side_nav {
+    background: cadetblue;
+}
+
+.sidenav---icon-bar---u1f02 {
+    color: black;
+}
+
+.selected_icon {
+    color: white !important;
+    font-size: 1.4rem;
+}
+
+.side_nav_icon:hover {
+    color: black !important;
+}
+
+.sidenav---icon-bar---u1f02 {
+    background: black !important;
+}
+
+.sidenav---navtext---1AE_f {
+    color: black !important;
+}
+
+.nav_items {
+    font-size: 1.2rem;
+}
+
+.sidenav---sidenav-subnavitem---1cD47 {
+    margin: 0rem !important;
+    padding: 0.7rem;
+    border-bottom: 1px solid lightgrey;
+}

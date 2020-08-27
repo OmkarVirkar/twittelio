@@ -1,0 +1,33 @@
+{
+  "name": "twitter_clone",
+  "version": "1.0.0",
+  "description": "This a backedn for a clone version of twitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "author": "Omkar Virkar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "connect": "^3.7.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "http-errors": "^1.8.0",
+    "mocha": "^8.1.1",
+    "mongoose": "^5.9.28",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "should": "^13.2.3"
+  }
+}
