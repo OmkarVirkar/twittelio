@@ -1,0 +1,13 @@
+.tab-option {
+    list-style-type: none;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+}
+
+.tab-item {
+    width: fit-content;
+}
+
+.active_option {
+    border-bottom: 3px solid cadetblue;
+}

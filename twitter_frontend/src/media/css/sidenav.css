@@ -1,5 +1,5 @@
 .page_side_nav {
-    margin-top: 3.3rem;
+    margin-top: 3.4rem;
 }
 
 .side_nav_icon {
@@ -49,4 +49,15 @@
     margin: 0rem !important;
     padding: 0.7rem;
     border-bottom: 1px solid lightgrey;
+}
+
+.nav-bar-width {
+    width: 4.5%;
+}
+.content-body-width {
+    width: 98.5%;
+}
+
+.w-100 {
+    width: 100%;
 }

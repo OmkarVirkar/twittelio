@@ -1,0 +1,17 @@
+const configs = {
+    BACKEND_BASE_URL: "localhost",
+    BACKEND_PORT_NUMBER: "9000",
+};
+
+const BACKEND_BASE_PATH = "http://" + configs.BACKEND_BASE_URL + ":" + configs.BACKEND_PORT_NUMBER;
+
+const LOGIN_MESSAGES = {
+    USER_FOUND: "USER_FOUND",
+    USER_NOT_FOUND: "USER_NOT_FOUND",
+    ERROR_OCCURED: "ERROR_OCCURED",
+    GO_BACK_TO_LOGIN: "EVENT:GO_BACK_TO_LOGIN",
+    TRIGGER_LOGOUT: "EVENT:TRIGGER_LOGOUT",
+    OK: "OK",
+};
+
+module.exports = { configs, LOGIN_MESSAGES, BACKEND_BASE_PATH };

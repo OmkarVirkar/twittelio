@@ -2,9 +2,10 @@ const router = require("express").Router();
 const loginActivityController = require("./loginActivityController");
 
 const baseController = () => {
-  router.use("/login-acitvity", loginActivityController);
+    router.get("/", (req, res) => res.send("Hello there!!"));
+    router.use("/login-acitvity", loginActivityController);
 
-  return router;
+    return router;
 };
 
 module.exports = baseController;
