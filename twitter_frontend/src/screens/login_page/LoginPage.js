@@ -132,7 +132,7 @@ export default class LoginPage extends Component {
                         <button className="btn btn-warning cancel_button login_buttons" onClick={() => this.resetFeilds()}>
                             Cancel
                         </button>
-                        <button className="btn btn-dark sign_in_button login_buttons" onClick={() => this.loginHandler()}>
+                        <button className="btn btn-dark sign_in_button login_buttons width-auto" onClick={() => this.loginHandler()}>
                             Sign In
                         </button>
                     </div>

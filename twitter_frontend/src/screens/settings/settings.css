@@ -11,3 +11,19 @@
 .active_option {
     border-bottom: 3px solid cadetblue;
 }
+
+.avatar {
+    width: 12rem;
+}
+
+#user_filds {
+    list-style-type: none;
+}
+
+.user_filds_li_item {
+    width: 25rem;
+    display: flex;
+}
+.MuiTextField-root {
+    width: 95%;
+}

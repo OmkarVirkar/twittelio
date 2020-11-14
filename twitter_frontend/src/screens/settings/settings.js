@@ -5,8 +5,12 @@ import "../../media/css/home.css";
 import "./settings.css";
 import { Header } from "../../common/Header";
 import PageSideNav from "../../common/sideNav";
+import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
 import { SIDEBAR_OPTIONS } from "../../common/sideNav";
+const avatarImage = require(`../../media/images/user_avatar_image.png`);
 const dotenv = require("dotenv");
+
 
 export default class Settings extends Component {
     constructor() {
@@ -65,12 +69,81 @@ let SettingsDiv = () => {
 };
 
 let AccountSetting = () => {
+    const useStyles = makeStyles((theme) => ({
+        root: {
+          '& .MuiTextField-root': {
+            margin: theme.spacing(1),
+            width: '25ch',
+          },
+        },
+    }));
     return (
-        <div className="row">
-            <div className="col-5">
-                <div>Temp</div>
+        <div className="row" style={{width:"100%", margin:"0%"}}>
+            <div className="col-2" style={{'display':"inline-table"}}>
+                <div style={{'padding':'0.9rem'}}>
+                    <img src={avatarImage} alt="Avatar" className="mt-2 mb-2 avatar"></img>
+                </div>
             </div>
-            <div className="col-7"></div>
+            <div className="col-10 p-3" style={{borderLeft: '1px solid #ececec'}}>
+                <ul id="user_filds" >
+                    <li className="user_filds_li_item d-inline-block mt-3">
+                        <TextField
+                            id="standard-read-only-input"
+                            label="User name"
+                            defaultValue="username"
+                            InputProps={{
+                                readOnly: true,
+                            }}
+                        />
+                    </li>
+                    <li className="user_filds_li_item d-inline-block mt-3">
+                        <TextField
+                            id="standard-read-only-input"
+                            label="Email Id"
+                            defaultValue=""
+                            InputProps={{
+                                readOnly: false,
+                            }}
+                        />
+                    </li>
+                    <li className="user_filds_li_item d-inline-block mt-3">
+                        <TextField
+                            id="standard-read-only-input"
+                            label="First name"
+                            defaultValue=""
+                            InputProps={{
+                                readOnly: false,
+                            }}
+                        />
+                    </li>
+                    <li className="user_filds_li_item d-inline-block mt-3">
+                        <TextField
+                            id="standard-read-only-input"
+                            label="Last name"
+                            defaultValue=""
+                            InputProps={{
+                                readOnly: false,
+                            }}
+                        />
+                    </li>
+
+                    <li className="user_filds_li_item d-inline-block mt-3">
+                        <TextField
+                            id="standard-read-only-input"
+                            label="password"
+                            defaultValue="password"
+                            type="password"
+                            InputProps={{
+                                readOnly: true,
+                            }}
+                        />
+                    </li>
+                    <li className="user_filds_li_item d-inline-block mt-3">
+                        <button className="btn btn-warning shadow-sm" style={{marginTop: '4%'}}>Reset password</button>
+                    </li>
+                </ul>
+                <button className="btn btn-success shadow-sm" style={{marginTop: '4%',marginLeft: '3%'}}>Save</button>
+            </div>
         </div>
     );
 };
